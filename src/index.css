@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+* {
+  font-family: "Montserrat", serif !important;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --layout-pad: 0 4rem;
+}
+
+.overlay {
+  background-color: #111315a3;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.2s;
+}
+
+.max-w {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--layout-pad);
+}
+
+.loader_wrapper {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 60px;
+  bottom: 0;
+  z-index: 9;
+  background: #1a1c1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loader_wrapper p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+
+
+
+.loader_chart_wrapper>p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #c1c2c4;
+}
+.loader{
+  margin-top: 10px;
+}
+
+.loader_chart {
+  margin-top: 10px;
+  width: 60px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side, #FAA64B 90%, #FAA64B);
+  background:
+    var(--_g) 0% 50%,
+    var(--_g) 50% 50%,
+    var(--_g) 100% 50%;
+  background-size: calc(75%/3) 50%;
+  animation: l3 1s infinite linear;
+}
+
+.loader {
+  width: 200px;
+  height: 20px;
+  background:
+    linear-gradient(#FAA64B 0 0) 0/0% no-repeat #ddd;
+  /* animation: l1 2s infinite linear; */
+  transition: 0.5s ease;
+}
+
+@keyframes l1 {
+  100% {
+    background-size: 100%
+  }
+}
+
+
+@media only screen and (max-width: 1400px) {
+  :root {
+    --layout-pad: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  :root {
+    --layout-pad: 0 1rem;
+  }
+}
+
+body,
+html {
+  background: #111315;
+}
+
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%
+  }
+
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%
+  }
+
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%
+  }
+
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%
+  }
+}

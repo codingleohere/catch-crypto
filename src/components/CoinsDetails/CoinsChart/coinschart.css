@@ -1,0 +1,46 @@
+.coins_chart {
+    padding-left: 20px;
+    flex: 6;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coins_chart canvas {
+    width: 100% !important;
+}
+
+.days_buttons button {
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #faa64b;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    color: #fff;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.days_buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .coins_chart {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .days_buttons {
+        flex-wrap: wrap;
+    }
+}

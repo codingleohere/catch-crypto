@@ -1,0 +1,117 @@
+.heromain {
+    background: url(../../assets/heroBg.png);
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heromain h1 {
+    font-size: 62px;
+    font-weight: 700;
+    color: #e7e9ed;
+}
+
+.heromain>p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #c1c2c4;
+    margin-top: 10px;
+}
+
+.carousel {
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.carousel_coins {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel_coins img {
+    width: 80px;
+}
+
+.carousel_coins h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.carousel_coins span {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.carousel_coins p {
+    font-weight: 600;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.coin_profit {
+    color: #30AC5d;
+}
+
+.coin_loss {
+    color: rgb(255, 92, 92);
+}
+
+@media only screen and (max-width: 800px) {
+    .heromain h1 {
+        font-size: 52px;
+    }
+
+    .heromain>p {
+        width: 80%;
+        text-align: center;
+    }
+
+    .carousel {
+        margin-top: 40px;
+    }
+
+    .carousel_coins h2 {
+        font-size: 16px;
+    }
+
+    .carousel_coins img {
+        width: 75px;
+    }
+
+    .carousel_coins p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .heromain h1 {
+        font-size: 42px;
+    }
+
+    .heromain>p {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+}
